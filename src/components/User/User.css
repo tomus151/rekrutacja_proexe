@@ -88,7 +88,6 @@
     top: 50%;
     right: 0%;
     transform: translate(170%, -75%);
-    z-index: 222;
 }
 
 .list-element-name-value.sort-up:before {
@@ -99,5 +98,4 @@
     top: 50%;
     right: 0%;
     transform: translate(170%, -25%);
-    z-index: 222;
 }
