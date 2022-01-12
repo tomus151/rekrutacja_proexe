@@ -25,6 +25,11 @@
     text-align: center;
 }
 
+.list-element-container input {
+    border: 1px solid#c9c9c9;
+    border-radius: 5px;
+}
+
 .list-element-container button {
     width: 160px;
     height: 65px;
