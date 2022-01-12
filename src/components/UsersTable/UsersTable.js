@@ -20,20 +20,21 @@ const UsersTable = ({ usersList, addUser, addState, isLightBoxOpen }) => {
     let sortedList
     if (sortMethod === 'sort-up') {
         sortedList = [...usersList].sort((a, b) => {
-            if (a.name.toLowerCase() > b.name.toLowerCase()) {
+            if (a.username.toLowerCase() > b.username.toLowerCase()) {
                 return -1
             }
-            if (a.name.toLowerCase() < b.name.toLowerCase()) {
+            if (a.username.toLowerCase() < b.username.toLowerCase()) {
                 return 1
             }
             return 0
         })
     } else if (sortMethod === 'sort-down') {
+        console.log(usersList)
         sortedList = [...usersList].sort((a, b) => {
-            if (a.name.toLowerCase() < b.name.toLowerCase()) {
+            if (a.username.toLowerCase() < b.username.toLowerCase()) {
                 return -1
             }
-            if (a.name.toLowerCase() > b.name.toLowerCase()) {
+            if (a.username.toLowerCase() > b.username.toLowerCase()) {
                 return 1
             }
             return 0

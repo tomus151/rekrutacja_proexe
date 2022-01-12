@@ -89,7 +89,7 @@ const User = ({ idProps, nameProps, userNameProps, emailProps, cityProps, editPr
             <div className="list-element-container name-container">
                 {
                     !canEdit ?
-                        <span className={`list-element-name-value ${canISort}`} onClick={sortClickProps}>{nameProps}</span>
+                        <span >{nameProps}</span>
                         :
                         <input className={`edit-name-input ${!nameValidation && 'no-validated'}`} value={inputName} onChange={handleInputNameChange} />
                 }
@@ -97,7 +97,7 @@ const User = ({ idProps, nameProps, userNameProps, emailProps, cityProps, editPr
             <div className="list-element-container username-container">
                 {
                     !canEdit ?
-                        <span className="-value">{userNameProps}</span>
+                        <span className={`list-element-name-value ${canISort}`} onClick={sortClickProps}>{userNameProps}</span>
                         :
                         <input value={inputUsername} onChange={handleInputUserNameChange} />
                 }
