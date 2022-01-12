@@ -29,7 +29,6 @@ const UsersTable = ({ usersList, addUser, addState, isLightBoxOpen }) => {
             return 0
         })
     } else if (sortMethod === 'sort-down') {
-        console.log(usersList)
         sortedList = [...usersList].sort((a, b) => {
             if (a.username.toLowerCase() < b.username.toLowerCase()) {
                 return -1
