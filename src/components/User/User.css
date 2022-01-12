@@ -1,0 +1,94 @@
+.list-element {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    height: 165px;
+}
+
+.list-element-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14.28%;
+}
+
+.list-element-container span {
+    font-size: 22px;
+    display: inline-block;
+    max-width: 100%;
+    word-wrap: break-word;
+    padding: 2px;
+    text-align: center;
+}
+
+.list-element-container button {
+    width: 160px;
+    height: 65px;
+    border-radius: 12px;
+    font-size: 22px;
+    color: #fff;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.edit-button {
+    background: #f0ad4e;
+}
+
+.edit-button:hover {
+    background: #b17e37;
+}
+
+.delete-button {
+    background: #da534f;
+}
+
+.delete-button:hover {
+    background: #a53e3b;
+}
+
+.edit-name-input.no-validated {
+    border: 2px solid#fab5b0;
+}
+
+.edit-email-input.no-validated {
+    border: 2px solid#fab5b0;
+}
+
+.list-element-name-value {
+    position: relative;
+
+}
+
+.list-element-name-value:first-child {
+    user-select: none;
+}
+
+.list-element-name-value.sort-down,
+.list-element-name-value.sort-up,
+.list-element-name-value.no-sort {
+    cursor: pointer;
+}
+
+.list-element-name-value.sort-down:before {
+    content: '';
+    border: 10px solid transparent;
+    border-bottom-color: #000;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(170%, -75%);
+    z-index: 222;
+}
+
+.list-element-name-value.sort-up:before {
+    content: '';
+    border: 10px solid transparent;
+    border-top-color: #000;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(170%, -25%);
+    z-index: 222;
+}

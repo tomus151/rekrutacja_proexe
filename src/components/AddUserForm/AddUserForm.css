@@ -1,0 +1,73 @@
+.add-user-form {
+    /* position: absolute; */
+    top: 0px;
+    left: 0px;
+}
+
+.not-validated {
+    border: 2px solid #fab5b0;
+}
+
+.validation-alert-text {
+    color: #fab5b0;
+    font-size: 10px;
+    margin-left: 226px;
+}
+
+.add-user-wrapper-field {
+    margin: 10px;
+    margin-right: 70px;
+    padding-left: 223px;
+}
+
+.add-user-wrapper-field label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.add-user-wrapper-field input {
+    float: right;
+    width: 962px;
+    height: 44px;
+    border-radius: 5px;
+}
+
+.add-user-buttons-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.add-user-buttons-container button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 26px;
+    width: 162px;
+    height: 65px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.add-user-buttons-container .add-user-button-submit {
+    background: #5cb85c;
+    color: #fff;
+    transition: 0.3s;
+    margin-right: 52px;
+}
+
+.add-user-button-submit:hover {
+    background: #3d7c3d;
+}
+
+.add-user-buttons-container .add-user-button-cancel {
+    background: #fff;
+    border: 2px solid #fab5b0;
+    color: #fab5b0;
+}

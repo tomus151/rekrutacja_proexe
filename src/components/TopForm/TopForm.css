@@ -1,0 +1,35 @@
+.top-of-form-container {
+    height: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1030px;
+
+}
+
+.top-of-form-container.cant-see {
+    display: none;
+}
+
+.top-form-button {
+    width: 241px;
+    margin-right: 14px;
+    height: 63px;
+    border-radius: 12px;
+    font-size: 28px;
+    font-weight: 700;
+    border: none;
+    background: #0274d8;
+    transition: .3s;
+    color: #fff;
+    cursor: pointer;
+}
+
+.top-form-button:hover {
+    background: #00427c;
+}
+
+.top-form-text {
+    margin-left: 49px;
+    font-size: 32px;
+}

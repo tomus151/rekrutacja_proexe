@@ -1,0 +1,74 @@
+.removepopup-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 620px;
+    height: 318px;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 12px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.data-to-remove {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 50px;
+}
+
+.removepopup-container .removepopup-text-container p {
+    padding-left: 40px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.removepopup-container .removepopup-text-container .removepopup-title {
+
+    font-size: 30px;
+    padding-left: 38px;
+    padding-top: 12px;
+    margin-bottom: 22px;
+    text-align: left;
+}
+
+.removepopup-container .removepopup-buttons-container {
+    display: flex;
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+.removepopup-container .removepopup-buttons-container button {
+    cursor: pointer;
+    width: 160px;
+    height: 65px;
+    border-radius: 12px;
+    transition: 0.3s;
+    color: #fff;
+    font-size: 20px;
+}
+
+.removepopup-container .removepopup-buttons-container .removepopup-button-cancel {
+    background: #fff;
+    margin-right: 20px;
+    border: 2px solid #fab5b0;
+    color: #fab5b0;
+}
+
+.removepopup-container .removepopup-buttons-container .removepopup-button-remove-user {
+    background: #da534f;
+    border: none;
+}
+
+.removepopup-container .removepopup-buttons-container .removepopup-button-remove-user:hover {
+    background: #a53e3b;
+
+
+}
