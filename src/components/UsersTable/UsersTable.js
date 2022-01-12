@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import UserConsumer from '../User/User';
 import { connect } from 'react-redux';
 import { addUser, addState } from '../../actions/appActions';
+import { v4 as uuidv4 } from 'uuid';
 import './UsersTable.css';
 const UsersTable = ({ usersList, addUser, addState, isLightBoxOpen }) => {
     const [firstUsersLoading, setFirstUsersLoading] = useState(false);
@@ -51,7 +52,7 @@ const UsersTable = ({ usersList, addUser, addState, isLightBoxOpen }) => {
             return (
                 [
                     <UserConsumer
-                        key={index}
+                        key={uuidv4()}
                         idProps="Id"
                         nameProps="Name"
                         userNameProps="Username"
@@ -62,7 +63,7 @@ const UsersTable = ({ usersList, addUser, addState, isLightBoxOpen }) => {
                         canISort={sortMethod}
                         sortClickProps={handleSortUsers}
                     />,
-                    <UserConsumer key={user.id + 1}
+                    <UserConsumer key={uuidv4()}
                         idProps={user.id}
                         nameProps={user.name}
                         userNameProps={user.username}
@@ -79,7 +80,7 @@ const UsersTable = ({ usersList, addUser, addState, isLightBoxOpen }) => {
         } else {
             return (
                 <UserConsumer
-                    key={user.id + 1}
+                    key={uuidv4()}
                     idProps={user.id}
                     nameProps={user.name}
                     userNameProps={user.username}
