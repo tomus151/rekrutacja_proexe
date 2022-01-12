@@ -4,7 +4,6 @@ import { deleteUser, editUser } from '../../actions/appActions';
 import { connect } from 'react-redux';
 import './User.css';
 const User = ({ idProps, nameProps, userNameProps, emailProps, cityProps, editProps, deleteProps, deleteUser, usersList, editUser, sortClickProps, canISort }) => {
-    // console.log(idProps, nameProps, userNameProps, emailProps, cityProps)
 
     const [removeClicked, setRemoveClicked] = useState(false);
     const [canEdit, setCanEdit] = useState(false);
@@ -15,14 +14,11 @@ const User = ({ idProps, nameProps, userNameProps, emailProps, cityProps, editPr
     const [inputCity, setInputCity] = useState(cityProps);
     const [nameValidation, setNameValidation] = useState(true);
     const [emailValidation, setEmailValidation] = useState(true);
-    // console.log(inputId, inputName, inputUsername, inputEmail, inputCity)
     const handleOpenRemoveUserPopUp = (id) => {
-        // document.querySelector('#root').style.filter = "blur(8px)";
         document.body.style.overflow = "hidden";
         setRemoveClicked(true)
     }
     const handleCloseRemoveUserPopUp = () => {
-        // document.querySelector('#root').style.filter = ""
         document.body.style.overflow = "";
         setRemoveClicked(false)
     }
